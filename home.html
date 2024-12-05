@@ -7,100 +7,119 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SansSerif:wght@400;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" />
+    <link rel="stylesheet" href="home.css" />
+    
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="w-[1440px] h-[1024px] relative bg-[#c4ead2]">
-        <!-- Top Navigation Bar -->
-        <div class="w-[1440px] h-[68px] left-0 top-0 absolute bg-[#c5ead3]"></div>
-        
-        <!-- Left Sidebar -->
-        <div class="w-[305px] h-[1024px] left-0 top-0 absolute bg-[#579b94]">
-            <!-- Logo Section -->
-            <div class="flex items-center mt-2 ml-4">
-                <img src="https://via.placeholder.com/51x52" alt="Logo" class="w-[50.85px] h-[52px]"/>
+    <!-- Logo Section (Now part of sidebar) -->
+    <div class="logo-section">
+        <img src="https://via.placeholder.com/51x52" alt="Logo" class="w-[50.85px] h-[52px]"/>
+        <div class="text-white text-lg font-['Abril Fatface'] ml-4">Mentor Connect</div>
+    </div>
+    <!-- Navigation Separator -->
+    <div class="nav-separator"></div>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <div class="flex justify-between items-center h-full px-4">
+            <!-- Logo Section with Side Menu Background -->
+            <div class="w-[305px] h-[68px] bg-[#579b94] flex items-center">
+                <img src="https://via.placeholder.com/51x52" alt="Logo" class="w-[50.85px] h-[52px] ml-4"/>
                 <div class="text-white text-lg font-['Abril Fatface'] ml-4">Mentor Connect</div>
             </div>
+        <!-- Search Bar -->
 
-            <!-- Dashboard -->
-            <div class="w-[245px] px-4 py-3 ml-6 mt-12 bg-[#579b94] rounded-md">
-                <div class="text-white text-sm font-semibold font-['Poppins']">Dashboard</div>
+        <div class="search-container">
+            <div class="w-[427px] h-9 bg-[#f5f6f8] rounded-md border border-[#eaedf2] flex items-center px-4">
+                <input type="text" placeholder="Search" class="bg-transparent text-[#495d72] text-sm font-medium font-['Poppins'] flex-1"/>
             </div>
+        </div>
 
-            <!-- Academic Section -->
-            <div class="ml-10 mt-8">
-                <div class="text-white text-xs uppercase">Academic</div>
-                <!-- Academic Menu Items -->
-                <div class="space-y-4 mt-4">
-                    <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Schedule</div>
-                    </div>
-                    <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Report</div>
-                    </div>
-                    <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Enrolled Courses</div>
-                    </div>
-                    <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Libraries</div>
+            <!-- User Actions -->
+            <div class="user-actions flex items-center gap-8">
+                <div class="relative">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full"></div>
+                    <div class="absolute top-2 right-2 w-2 h-2 bg-[#eb5757] rounded-full"></div>
+                </div>
+                <div class="relative">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full"></div>
+                    <div class="absolute top-2 right-2 w-2 h-2 bg-[#eb5757] rounded-full"></div>
+                </div>
+                <img src="https://via.placeholder.com/50x50" alt="Profile" class="w-[50px] h-[50px] rounded-full"/>
+            </div>
+        </div>
+    </div>
+<!-- Separator Line -->
+<div class="absolute bottom-0 left-0 right-0 h-[1px] bg-white opacity-50"></div>
+</div>
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <!-- Logo Section -->
+        <div class="flex items-center mt-2 ml-4">
+            <img src="https://via.placeholder.com/51x52" alt="Logo" class="w-[50.85px] h-[52px]"/>
+            <div class="text-white text-lg font-['Abril Fatface'] ml-4">Mentor Connect</div>
+        </div>
+
+            <!-- Menu Items -->
+            <div class="mt-16">
+                <!-- Dashboard -->
+                <div class="w-[245px] px-4 py-3 ml-6 bg-[#579b94] rounded-md">
+                    <div class="text-white text-sm font-semibold font-['Poppins']">Dashboard</div>
+                </div>
+
+                <!-- Academic Section -->
+                <div class="mt-8 ml-10">
+                    <div class="text-white text-xs uppercase">Academic</div>
+                    <div class="space-y-4 mt-4">
+                        <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Schedule</div>
+                        </div>
+                        <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Report</div>
+                        </div>
+                        <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Enrolled Courses</div>
+                        </div>
+                        <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Libraries</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Administrative Section -->
-            <div class="ml-10 mt-8">
-                <div class="text-white text-xs uppercase">Administrative</div>
-                <div class="w-[245px] px-4 py-3 mt-4 bg-[#579b94] rounded-md">
-                    <div class="text-white text-sm font-medium font-['Poppins']">Announcements</div>
-                </div>
-            </div>
-
-            <!-- Settings Section -->
-            <div class="ml-10 mt-8">
-                <div class="text-white text-xs uppercase">Settings</div>
-                <div class="space-y-4 mt-4">
-                    <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Account Settings</div>
+                <!-- Administrative Section -->
+                <div class="mt-8 ml-10">
+                    <div class="text-white text-xs uppercase">Administrative</div>
+                    <div class="w-[245px] px-4 py-3 mt-4 bg-[#579b94] rounded-md">
+                        <div class="text-white text-sm font-medium font-['Poppins']">Announcements</div>
                     </div>
-                    <div class="w-[245px] px-4 py-3">
-                        <div class="text-white text-sm font-medium font-['Poppins']">Notification Preferences</div>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="mt-8 ml-10">
+                    <div class="text-white text-xs uppercase">Settings</div>
+                    <div class="space-y-4 mt-4">
+                        <div class="w-[245px] px-4 py-3 bg-[#579b94] rounded-md">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Account Settings</div>
+                        </div>
+                        <div class="w-[245px] px-4 py-3">
+                            <div class="text-white text-sm font-medium font-['Poppins']">Notification Preferences</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Main Content Area -->
-        <div class="ml-[305px] p-4">
-            <!-- Top Bar -->
-            <div class="flex justify-between items-center">
-                <!-- Search Bar -->
-                <div class="w-[427px] h-9 bg-[#f5f6f8] rounded-md border border-[#eaedf2] flex items-center px-4">
-                    <input type="text" placeholder="Search" class="bg-transparent text-[#495d72] text-sm font-medium font-['Poppins'] flex-1"/>
-                </div>
-
-                <!-- User Actions -->
-                <div class="flex items-center gap-8">
-                    <div class="relative">
-                        <div class="w-[50px] h-[50px] bg-white rounded-full"></div>
-                        <div class="absolute top-2 right-2 w-2 h-2 bg-[#eb5757] rounded-full"></div>
-                    </div>
-                    <div class="relative">
-                        <div class="w-[50px] h-[50px] bg-white rounded-full"></div>
-                        <div class="absolute top-2 right-2 w-2 h-2 bg-[#eb5757] rounded-full"></div>
-                    </div>
-                    <img src="https://via.placeholder.com/50x50" alt="Profile" class="w-[50px] h-[50px] rounded-full"/>
-                </div>
-            </div>
-
-            <!-- Welcome Section -->
-            <div class="mt-6 flex items-center">
-                <span class="text-2xl">👋</span>
-                <h1 class="ml-3 text-2xl text-[#0c1e33] font-normal font-['Poppins']">Welcome, Merna!</h1>
-            </div>
+      <!-- Main Content Area -->
+<div class="main-content">
+    <!-- Welcome Section -->
+    <div class="mt-6 flex items-center">
+        <span class="text-2xl">👋</span>
+        <h1 class="ml-3 text-2xl text-[#0c1e33] font-normal font-['Poppins']">Welcome, Merna!</h1>
+    </div>
 
             <!-- Featured Content -->
-            <div class="mt-8 bg-[#f4f5f7] rounded p-4">
+            <div class="mt-8 bg-[#f4f5f7] rounded p-4 mr-[223px]">
                 <h2 class="text-2xl font-bold text-[#0c1e33]">Get Involved - Join a Club Today!</h2>
                 <p class="mt-4 text-[#495d72] text-sm">
                     Explore your interests and meet like-minded students by joining one of our many clubs. 
@@ -114,84 +133,43 @@
                 </button>
             </div>
 
-            <!-- Statistics Cards -->
-            <div class="mt-8 grid grid-cols-4 gap-6">
-                <!-- Statistics Cards -->
-                <div class="grid grid-cols-4 gap-6 mt-8">
-                    <!-- Card 1 -->
-                    <div class="bg-white rounded-lg p-6 text-center">
-                        <h3 class="text-2xl font-bold text-black">85%</h3>
-                        <p class="text-gray-600 mt-2">Attendance Rate</p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white rounded-lg p-6 text-center">
-                        <h3 class="text-2xl font-bold text-black">24</h3>
-                        <p class="text-gray-600 mt-2">Assignments</p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white rounded-lg p-6 text-center">
-                        <h3 class="text-2xl font-bold text-black">12</h3>
-                        <p class="text-gray-600 mt-2">Projects</p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white rounded-lg p-6 text-center">
-                        <h3 class="text-2xl font-bold text-black">3.8</h3>
-                        <p class="text-gray-600 mt-2">GPA</p>
-                    </div>
-                </div>
-            </div>
-
             <!-- Community Groups -->
-            <div class="mt-8">
+            <!-- Community Groups Section -->
+            <div class="mt-8 community-groups">
                 <h2 class="text-xl font-bold text-black">Community Groups</h2>
                 <div class="mt-4 grid grid-cols-4 gap-6">
-                    <!-- Community Group Cards -->
-                    <div class="bg-[#aee2e1] rounded-lg p-4 text-center">
-                        <h3 class="font-medium">Design Community Mumbai</h3>
-                        <p class="mt-2 text-sm">2.5k members</p>
+                    <!-- Community Cards -->
+                    <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
+                        <h3 class="font-medium text-black">Design Community Mumbai</h3>
+                        <p class="text-sm text-gray-700 mt-2">2.5k members</p>
                     </div>
-                                            <!-- Community Cards -->
-                        <div class="grid grid-cols-4 gap-6 mt-4">
-                            <!-- Community Card 1 -->
-                            <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
-                                <h3 class="font-medium text-black">Design Community Mumbai</h3>
-                                <p class="text-sm text-gray-700 mt-2">2.5k members</p>
-                            </div>
-
-                            <!-- Community Card 2 -->
-                            <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
-                                <h3 class="font-medium text-black">Dribble Globals Group</h3>
-                                <p class="text-sm text-gray-700 mt-2">1.8k members</p>
-                            </div>
-
-                            <!-- Community Card 3 -->
-                            <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
-                                <h3 class="font-medium text-black">Marketing Support Group</h3>
-                                <p class="text-sm text-gray-700 mt-2">3.2k members</p>
-                            </div>
-
-                            <!-- Community Card 4 -->
-                            <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
-                                <h3 class="font-medium text-black">DevOps Community Mumbai</h3>
-                                <p class="text-sm text-gray-700 mt-2">1.5k members</p>
-                            </div>
-                        </div>
+                    <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
+                        <h3 class="font-medium text-black">Dribble Globals Group</h3>
+                        <p class="text-sm text-gray-700 mt-2">1.8k members</p>
+                    </div>
+                    <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
+                        <h3 class="font-medium text-black">Marketing Support Group</h3>
+                        <p class="text-sm text-gray-700 mt-2">3.2k members</p>
+                    </div>
+                    <div class="bg-[#aee2e1] rounded-lg p-6 text-center">
+                        <h3 class="font-medium text-black">DevOps Community Mumbai</h3>
+                        <p class="text-sm text-gray-700 mt-2">1.5k members</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Right Sidebar -->
-        <div class="absolute top-0 right-0 w-[223px] h-full bg-white p-4">
+        <div class="right-sidebar">
+            <div class="p-4">
+        
             <!-- Calendar Section -->
             <div class="mt-12">
                 <div class="flex justify-between items-center">
                     <span class="text-sm font-medium text-[#0c1e33]">January 2024</span>
                 </div>
-                <!-- Add calendar grid here -->
-                 <!-- Calendar Grid -->
+                <!-- Calendar Grid -->
+                   <!-- Calendar Grid -->
                     <!-- Calendar Section -->
                     <div class="mt-4">
                         <!-- Month Navigation -->
@@ -273,27 +251,23 @@
             <!-- Events Section -->
             <div class="mt-8">
                 <h3 class="font-medium text-black">Today</h3>
-                <!-- Add event cards here -->
-                 <!-- Event Cards -->
-                    <div class="space-y-4 mt-4">
-                        <!-- Event Card 1 -->
-                        <div class="bg-[#aee2e1] bg-opacity-70 rounded-lg p-4">
-                            <h4 class="font-medium text-black">Element of Design Test</h4>
-                            <div class="mt-2 text-sm text-gray-600">
-                                <p>10:30 AM - 11:30 AM</p>
-                                <p>Room 201</p>
-                            </div>
-                        </div>
-
-                        <!-- Event Card 2 -->
-                        <div class="bg-[#a2d1cc] bg-opacity-74 rounded-lg p-4">
-                            <h4 class="font-medium text-black">Project Review</h4>
-                            <div class="mt-2 text-sm text-gray-600">
-                                <p>2:00 PM - 3:00 PM</p>
-                                <p>Conference Room</p>
-                            </div>
+                <div class="space-y-4 mt-4">
+                    <!-- Event Cards -->
+                    <div class="bg-[#aee2e1] bg-opacity-70 rounded-lg p-4">
+                        <h4 class="font-medium text-black">Element of Design Test</h4>
+                        <div class="mt-2 text-sm text-gray-600">
+                            <p>10:30 AM - 11:30 AM</p>
+                            <p>Room 201</p>
                         </div>
                     </div>
+                    <div class="bg-[#a2d1cc] bg-opacity-74 rounded-lg p-4">
+                        <h4 class="font-medium text-black">Project Review</h4>
+                        <div class="mt-2 text-sm text-gray-600">
+                            <p>2:00 PM - 3:00 PM</p>
+                            <p>Conference Room</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

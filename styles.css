@@ -1,0 +1,65 @@
+/* styles.css */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #c5ead3;
+    height: 68px;
+}
+
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 305px;
+    background-color: #579b94;
+    overflow-y: auto;
+    z-index: 99;
+}
+
+.main-content {
+    margin-left: 305px;
+    margin-top: 68px;
+    padding: 20px;
+    background-color: #c4ead2;
+    min-height: calc(100vh - 68px);
+}
+
+.right-sidebar {
+    position: fixed;
+    top: 88px; /* Adjusted to create space from top */
+    right: 20px; /* Added margin from right */
+    width: 223px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: calc(100vh - 108px);
+    overflow-y: auto;
+}
+
+.logo-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 305px;
+    height: 68px;
+    background-color: #579b94;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 101;
+}
+
+.nav-separator {
+    position: fixed;
+    top: 67px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+}
